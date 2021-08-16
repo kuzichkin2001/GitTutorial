@@ -10,10 +10,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>{title}</h1>
-        <Header/>
-     {/* <label htmlFor="input-name">Введите имя</label>
-      <input id="input-name" onInput={inputHandler} />*/}
+      <Header/>
     </div>
   );
 }
