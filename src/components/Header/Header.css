@@ -1,0 +1,17 @@
+ul {
+    height: 27.2px;
+    background-color: black;
+}
+li
+{
+    float:left;
+    list-style-type: none;
+    margin-right: 2px;
+}
+a{
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    font-size: 15.3pt;
+    border-right: 2px solid white;
+}

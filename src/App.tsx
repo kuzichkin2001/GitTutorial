@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-
+import Header from "./components/Header/Header";
 function App() {
   const [title, setTitle] = useState<string>('');
 
@@ -11,8 +11,9 @@ function App() {
   return (
     <div className="container">
       <h1>{title}</h1>
-      <label htmlFor="input-name">Введите имя</label>
-      <input id="input-name" onInput={inputHandler} />
+        <Header/>
+     {/* <label htmlFor="input-name">Введите имя</label>
+      <input id="input-name" onInput={inputHandler} />*/}
     </div>
   );
 }
