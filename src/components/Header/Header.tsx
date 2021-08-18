@@ -1,11 +1,11 @@
 import React, {useState} from "react";
-
 import githubLogo from '../../assets/images/github-logo-big.png';
 import './Header.css'
+
 function Header() {
     return (
         <header className="header-content">
-            <a href="github.com" className="header-content__logo-wrapper">
+            <a href="https://github.com" className="header-content__logo-wrapper">
                 <img className="header-content__logo" src={githubLogo} alt="github logo" />
                 <h1 className="header-content__title">Github Tutorial</h1>
             </a>

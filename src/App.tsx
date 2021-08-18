@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import Header from "./components/Header/Header";
+import BodyM from "./components/BodyM/BodyM";
 function App() {
   const [title, setTitle] = useState<string>('');
 
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="container">
       <Header/>
+      <BodyM/>
     </div>
   );
 }
