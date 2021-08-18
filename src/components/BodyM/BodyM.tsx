@@ -5,7 +5,7 @@ function BodyM() {
     return(
          <body className="body-main">
             <div className="main-section">
-                <img className="main-section_image" src={GitHus} alt='github img'/>
+               <a href="https://github.com"><img className="main-section_image" src={GitHus} alt='github img'/></a>
                 <p className='main-section-content'>GitHub is, fundamentally, a hosting platform for coders. The cloud-based service allows coders to effectively manage and maintain open-source programming projects while collaborating with others.</p>
                 <p className='main-section-content'> To understand how GitHub works, you have to have an understanding of "Git" and the idea of "version control" in relation to Git.</p>
                 <p className='main-section-content'>Git, started by Linux creator Linus Torvalds, is an open-source version control system that tracks changes in files over time.</p>
