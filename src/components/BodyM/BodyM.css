@@ -7,7 +7,7 @@
     float:left;
     display: block;
     padding-left: 1rem;
-    margin: 2rem;
+    margin-left:2rem;
     text-align: left;
     border-right: 1px solid white;
 }
@@ -26,8 +26,9 @@
 .side-section {
     height: 100%;
     display: flex;
-    margin: 5rem;
+    margin: 4rem;
     padding-right:10rem;
+    padding-left:5rem;
 }
 .side-section-list{
     list-style-type: none;

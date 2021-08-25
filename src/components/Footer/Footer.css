@@ -1,0 +1,26 @@
+.footer-content__list-item {
+    float:left;
+    list-style-type: none;
+    padding-right: 10rem;
+}
+.footer-content__link {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 15pt;
+}
+
+.footer-content {
+    display: flex;
+    border-top: 3px dashed lightblue;
+    justify-content: space-around;
+}
+.footer-copyright {
+    display:flex;
+    padding-left:2rem;
+    font-size: 20px;
+}
+.footer-content__link:hover {
+    color: lightblue;
+    transition: color .5s;
+}
