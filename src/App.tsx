@@ -1,18 +1,15 @@
 import React, {useState} from 'react';
 import './App.css';
 import Header from "./components/Header/Header";
-import BodyM from "./components/BodyM/BodyM";
-function App() {
-  const [title, setTitle] = useState<string>('');
+import ContentBody from "./components/ContentBody/ContentBody";
 
-  const inputHandler = (event: any) => {
-    setTitle(event.target.value);
-  };
+interface Props {}
 
+const App: React.FC<Props> = () => {
   return (
     <div className="container">
-      <Header/>
-      <BodyM/>
+      <Header />
+      <ContentBody />
     </div>
   );
 }
