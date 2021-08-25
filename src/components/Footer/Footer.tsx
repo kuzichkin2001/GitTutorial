@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import './Footer.css';
-import Header from "../Header/Header";
 function Footer(){
     return(
         <footer>

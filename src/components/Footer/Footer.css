@@ -1,4 +1,5 @@
 .footer-content__list-item {
+    padding-top:.5rem;
     float:left;
     list-style-type: none;
     padding-right: 10rem;
