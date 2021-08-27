@@ -4,7 +4,30 @@ import GitHub from '../../assets/images/github-image.png';
 
 interface Props {}
 
+interface NavigationItem {
+  title: string,
+  href?: string,
+}
+
+
+
 const ContentBody: React.FC<Props> = () => {
+
+  const [navigationList, setNavigationList] = useState<Array<NavigationItem>>([
+    {
+      title: 'Getting started with git',
+    },
+    {
+      title: 'How to push',
+    },
+    {
+      title: 'How to pull & fork',
+    },
+    {
+      title: 'How to clone',
+    },
+  ]);
+
   return (
     <div className="body-main">
       <div className="main-section">
@@ -18,20 +41,13 @@ const ContentBody: React.FC<Props> = () => {
         <p className='main-section-content'>Version control systems like Git help maintain the integrity and security of ever-evolving code by safeguarding modifications, and those revisions are then hosted by GitHub, or an alternative "repository" hosting service — although GitHub is the most popular among developers.</p>
         <p className='main-section-content'>This allows developers to easily collaborate, allowing them to download a new version of the software, make changes, and upload the newest revision. Every developer can see these new changes, download them, and contribute.</p>
       </div>
-      <div className="side-section">
+      <div className='side-section'>
         <ul className='side-section-list'>
-          <li className="side-section-list-item">
-            <a className='side-section-list_content' href=''>Getting started with Git</a>
+          {navigationList.map((item:NavigationItem) =>
+          <li className='side-section-list-item'>
+            <a className='side-section-list_content' href={item.href}>{item.title}</a>
           </li>
-          <li className="side-section-list-item">
-            <a className='side-section-list_content' href=''>How to push</a>
-          </li>
-          <li className="side-section-list-item">
-            <a className='side-section-list_content' href=''>How to pull & fork</a>
-          </li>
-          <li className="side-section-list-item">
-            <a className='side-section-list_content' href=''>How to clone</a>
-          </li>
+          )}
         </ul>
       </div>
     </div>
