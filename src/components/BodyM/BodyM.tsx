@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import './BodyM.css';
 import GitHus from "../../assets/images/github-image.png"
+
 function BodyM() {
     return(
          <body className="body-main">
